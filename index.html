@@ -1,121 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corp Vision</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Corp Vision</title>
 
-    <!-- BS4 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <!-- BS4 -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+            crossorigin="anonymous"
+        />
 
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- FONT AWESOME -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
 
-    <!-- GOOGLE FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap" rel="stylesheet">
+        <!-- GOOGLE FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- MY CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+        <!-- SLICK LIBRARY  -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
 
+        <!-- MY CSS -->
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
 
-</head>
-<body>
-    <div class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                        Dropdown
+    <body>
+        <header class="header__wrap">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#">
+                        <span>
+                            <i class="fa-solid fa-align-right"></i>Corp Vision
+                        </span>
+
+                        <p class="logo">Vision to your Future</p>
                     </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#corpVisionNavBar"
+                        aria-controls="#corpVisionNavBar"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span
+                            class="navbar-toggler-icon fa icon-expand fa-bars"
+                        ></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="corpVisionNavBar">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"
+                                    >Home
+                                    <span class="sr-only">(current)</span></a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    role="button"
+                                    data-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Pages
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#"
+                                        >Blog Posts</a
+                                    >
+                                    <a class="dropdown-item" href="#"
+                                        >404 Page</a
+                                    >
+                                    <a class="dropdown-item" href="#"
+                                        >Landing Page</a
+                                    >
+                                    <a class="dropdown-item" href="#"
+                                        >Elements Page</a
+                                    >
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
                     </div>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
+
+                    <!-- SEARCH ICON -->
+                    <div class="header__icon">
+                        <div class="header__search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="darkLight">
+                            <i class="fa-regular fa-moon"></i>
+                        </div>
+                    </div>
+
+                    <!-- DARK THEME -->
+                </nav>
             </div>
-          </nav>
-    </div>
+        </header>
 
-    <section class="carousel">
+        <!-- CAROUSEL SECTION STARTS HERE -->
+        <section class="myCarousel">
+            <div class="carousel__sliders">
+                <div class="carousel__slide bg1">
+                    <div class="container">
+                        <div class="carousel__content">
+                            <h2>
+                                We will do your issues our vision to your future
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Sunt explicabo nisi
+                                consequatur maxime maiores autem.
+                            </p>
+                            <div class="cta-btn">
+                                <a href="" class="btn btn-style btn-primary"
+                                    >Get Started</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel__overlay"></div>
+                </div>
+                <div class="carousel__slide bg2">
+                    <div class="container">
+                        <div class="carousel__content">
+                            <h2>
+                                Embracing success do our best, need your advice
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Sunt explicabo nisi
+                                consequatur maxime maiores autem.
+                            </p>
+                            <div class="cta-btn">
+                                <a href="" class="btn btn-style btn-primary"
+                                    >Learn More</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel__overlay"></div>
+                </div>
 
-    </section>
+                <div class="carousel__slide bg3">
+                    <div class="container">
+                        <div class="carousel__content">
+                            <h2>Digital transformation driven by technology</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Sunt explicabo nisi
+                                consequatur maxime maiores autem.
+                            </p>
+                            <div class="cta-btn">
+                                <a href="" class="btn btn-style btn-primary"
+                                    >Learn More</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel__overlay"></div>
+                </div>
 
-    <section class="about-us">
+                <div class="carousel__slide bg4">
+                    <div class="container">
+                        <div class="carousel__content">
+                            <h2>For those who believe in leaving a mark</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Sunt explicabo nisi
+                                consequatur maxime maiores autem.
+                            </p>
+                            <div class="cta-btn">
+                                <a href="" class="btn btn-style btn-primary"
+                                    >Learn More</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel__overlay"></div>
+                </div>
+            </div>
 
-    </section>
+            <div class="shape">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
+                    <path fill-opacity="1">
+                        <animate
+                            attributeName="d"
+                            dur="20000ms"
+                            repeatCount="indefinite"
+                            values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+                M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;"
+                        ></animate>
+                    </path>
+                </svg>
+            </div>
+        </section>
 
-    <section class="vision">
+        <section class="about-us">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <div class="title">
+                            <h3>About Us</h3>
+                            <h2>
+                                We make the best strategies for you, Enhancing
+                                your success
+                            </h2>
+                        </div>
+                        <div class="about-us__checklist">
+                            <div class="checklist__item">
+                                <span>
+                                    <i class="fa-solid fa-check"></i>UI/UX
+                                    Design and Development
+                                </span>
+                            </div>
+                            <div class="checklist__item">
+                                <span>
+                                    <i class="fa-solid fa-check"></i>Branding
+                                    Design and Identity
+                                </span>
+                            </div>
+                            <div class="checklist__item">
+                                <span>
+                                    <i class="fa-solid fa-check"></i>Mobile App
+                                    Design and Development
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                      
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    </section>
+        <section class="vision"></section>
 
-    <section class="services">
+        <section class="services"></section>
 
-    </section>
+        <section class="gallery"></section>
 
-    <section class="gallery">
+        <section class="brands"></section>
 
-    </section>
+        <section class="statistics"></section>
 
-    <section class="brands">
+        <section class="testimonial"></section>
 
-    </section>
+        <section class="news"></section>
 
-    <section class="statistics">
+        <section class="subscribe"></section>
 
-    </section>
-    
-    <section class="testimonial">
+        <section class="contact"></section>
 
-    </section>
+        <footer></footer>
 
-    <section class="news">
+        <!-- Jquery -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
 
-    </section>
+        <!-- BS4 JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+            crossorigin="anonymous"
+        ></script>
 
-    <section class="subscribe">
-
-    </section>
-
-    <section class="contact">
-
-    </section>
-
-    <footer>
-
-    </footer>
-
-    <!-- Jquery -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-
-    <!-- BS4 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-        crossorigin="anonymous"></script>
-
-
-</body>
+        <!-- SLICK  -->
+        <script
+            type="text/javascript"
+            src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        <script>
+            $(".carousel__sliders").slick({
+                dots: FontFaceSetLoadEvent,
+                infinite: true,
+                autoplay: true,
+                autoplayspeed: 2000,
+                fade: true,
+                cssEase: "linear",
+            });
+        </script>
+    </body>
 </html>
