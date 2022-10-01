@@ -13,7 +13,7 @@
             integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
             crossorigin="anonymous"
         />
-
+        
         <!-- FONT AWESOME -->
         <link
             rel="stylesheet"
@@ -30,6 +30,9 @@
             href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap"
             rel="stylesheet"
         />
+
+        <!-- FANCYBOX -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
 
         <!-- SLICK LIBRARY  -->
         <link
@@ -226,8 +229,8 @@
             </div>
         </section>
 
-        <section class="about-us">
-            <div class="container">
+        <section class="about-us py-5">
+            <div class="container mt-5">
                 <div class="row align-items-center">
                     <div class="col-6">
                         <div class="title">
@@ -237,41 +240,225 @@
                                 your success
                             </h2>
                         </div>
-                        <div class="about-us__checklist">
-                            <div class="checklist__item">
-                                <span>
-                                    <i class="fa-solid fa-check"></i>UI/UX
-                                    Design and Development
-                                </span>
-                            </div>
-                            <div class="checklist__item">
-                                <span>
-                                    <i class="fa-solid fa-check"></i>Branding
-                                    Design and Identity
-                                </span>
-                            </div>
-                            <div class="checklist__item">
-                                <span>
-                                    <i class="fa-solid fa-check"></i>Mobile App
-                                    Design and Development
-                                </span>
-                            </div>
-                        </div>
+                        <p class="mt-md-4 mt-3 generic-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit deleniti, aliquid omnis, repellendus obcaecati sint aliquam quis, nam aspernatur eveniet corrupti pariatur nihil quia recusandae.</p>
+                        <ul class="about-us__checklist pt-lg-2 mt-4">
+                            <li class="checklist__link title-bold-small"><a href="#url"><span class="fa fa-check-circle"></span> UI/UX Design and Development</a></li>
+                            <li class="checklist__link title-bold-small"><a href="#url"><span class="fa fa-check-circle"></span> Branding Design and Identity</a></li>
+                            <li class="checklist__link title-bold-small"><a href="#url"><span class="fa fa-check-circle"></span> Mobile App Design and Development</a></li>
+                        </ul>
                     </div>
                     <div class="col-6">
-                      
+                        <div class="row position-relative">
+                            <div class="col-6">
+                                <img src="./img/a.jpg" alt class="radius-image img-fluid">
+                            </div>
+                            <div class="col-6 mt-4">
+                                <img src="./img/c1.jpg" alt class="radius-image img-fluid mb-2">
+                                <img src="./img/c4.jpg" alt class="radius-image img-fluid mt-3">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="vision"></section>
+        <section class="vision py-5">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-6 vision__left pr-5 mt-4">
+                        <div class="title">
+                            <h3>EVERY DAY BRINGS NEW CHALLENGES</h3>
+                            <h2>Creative agency focused on vision, product and people</h2>
+                        </div>
+                        <p class="my-4 generic-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ad minima architecto voluptatem error omnis, quo ducimus! Nostrum illum dignissimos inventore id recusandae eveniet voluptatem!</p>
+                        <div class="cta-btn mt-5">
+                            <a href="" class="btn btn-style btn-primary"
+                                >Discover More</a
+                            >
+                        </div>
+                    </div>
+                    <div class="col-6 vision__right justify-content-center">
+                        <div class="vision__grid">
+                            <div class="vision__item">
+                                <div class="vision__icon">
+                                    <img src="./img/icon1.png" alt="" class="img-fluid">
+                                </div>
+                                <h4>
+                                    <a href="">Our Process</a>
+                                </h4>
+                            </div>
+                            <div class="vision__item">
+                                <div class="vision__icon">
+                                    <img src="./img/icon2.png" alt="" class="img-fluid">
+                                </div>
+                                <h4>
+                                    <a href="">How We Help</a>
+                                </h4>
+                            </div>
+                            <div class="vision__item">
+                                <div class="vision__icon">
+                                    <img src="./img/icon3.png" alt="" class="img-fluid">
+                                </div>
+                                <h4>
+                                    <a href="">UI/UX Design</a>
+                                </h4>
+                            </div>
+                            <div class="vision__item">
+                                <div class="vision__icon">
+                                    <img src="./img/icon4.png" alt="" class="img-fluid">
+                                </div>
+                                <h4>
+                                    <a href="">Creative Ideas</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <section class="services"></section>
+        <section class="services py-5">
+            <div class="container py-5 text-center">
+                <div class="title">
+                    <h2 class="mb-5">Always there for your care, our Services</h2>
+                </div>  
+                <div class="row justify-content-center text-align-center">
+                    <div class="col-4">
+                        <div class="services__item">
+                            <img src="./img/s1.jpg" alt="" class="radius-image img-fluid">
+                            <div class="services__details title-bold-small">
+                                <a href="#url" class="">Work Expertise</a>
+                                <p class="generic-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, sequi.</p>
+                                <a href="">Learn More</a>
+                            </div>
+                        </div>
 
-        <section class="gallery"></section>
+                    </div>
+                    <div class="col-4">
+                        <div class="services__item">
+                            <img src="./img/s2.jpg" alt="" class="radius-image img-fluid">
+                            <div class="services__details title-bold-small">
+                                <a href="#url" class="">Product Development</a>
+                                <p class="generic-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, sequi.</p>
+                                <a href="">Learn More</a>
+                            </div>
+                        </div>
 
-        <section class="brands"></section>
+                    </div>
+                    <div class="col-4">
+                        <div class="services__item">
+                            <img src="./img/s3.jpg" alt="" class="radius-image img-fluid">
+                            <div class="services__details title-bold-small">
+                                <a href="#url" class="">Software Development</a>
+                                <p class="generic-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, sequi.</p>
+                                <a href="">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="myGallery py-5">
+            <div class="container">
+                <div class="title text-center py-5">
+                    <h3>Our Gallery</h3>
+                    <h2>Sucessful projects we've done</h2>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <a href="" data-src="./img/c1.jpg" data-fancybox="gallery" data-caption="Caption 1" class="zoom d-block position-relative">
+                            <img src="./img/c1.jpg" alt=""class="img-fluid">
+                            <span class="gallery__overlay"></span>
+                            <span class="gallary__content">
+                                <span class="project__title">Project 1</span>
+                                <span class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+                            </span>
+                        </a>
+                    </div>
+            
+                    <div class="col-4">
+                        <a href="" data-src="./img/c2.jpg" data-fancybox="gallery" data-caption="Caption 1" class="zoom d-block position-relative">
+                            <img src="./img/c2.jpg" alt=""class="img-fluid">
+                            <span class="gallery__overlay"></span>
+                            <span class="gallary__content">
+                                <span class="project__title">Project 2</span>
+                                <span class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+                            </span>
+                        </a>
+                    </div>
+                        
+                    <div class="col-4">
+                        <a href="" data-src="./img/c3.jpg" data-fancybox="gallery" data-caption="Caption 1" class="zoom d-block position-relative">
+                            <img src="./img/c3.jpg" alt=""class="img-fluid">
+                            <span class="gallery__overlay"></span>
+                            <span class="gallary__content">
+                                <span class="project__title">Project 3</span>
+                                <span class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+                            </span>
+                        </a>
+                    </div>
+                      
+                        
+                </div>
+                <div class="row">
+                    <div class="col-4 mt-4 pt-2">
+                        <a href="" data-src="./img/c4.jpg" data-fancybox="gallery" data-caption="Caption 1" class="zoom d-block position-relative">
+                            <img src="./img/c4.jpg" alt=""class="img-fluid">
+                            <span class="gallery__overlay"></span>
+                            <span class="gallary__content">
+                                <span class="project__title">Project 4</span>
+                                <span class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+                            </span>
+                            
+                        </a>
+                    </div>
+                        
+                    <div class="col-4 mt-4 pt-2">
+                        <a href="" data-src="./img/c5.jpg" data-fancybox="gallery" data-caption="Caption 1" class="zoom d-block position-relative">
+                            <img src="./img/c5.jpg" alt=""class="img-fluid">
+                            <span class="gallery__overlay"></span>
+                            <span class="gallary__content">
+                                <span class="project__title">Project 5</span>
+                                <span class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+                            </span>
+                        </a>
+                    </div>
+                        
+                        
+                    <div class="col-4 mt-4 pt-2">
+                        <a href="" data-src="./img/c6.jpg" data-fancybox="gallery" data-caption="Caption 1" class="zoom d-block position-relative" >
+                            <img src="./img/c6.jpg" alt=""class="img-fluid">
+                            <span class="gallery__overlay"></span>
+                            <span class="gallary__content">
+                                <span class="project__title">Project 6</span>
+                                <span class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center brands__logo mt-5">
+                    <div class="col">
+                        <img src="./img/brand1.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="./img/brand6.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="./img/brand3.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="./img/brand4.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="./img/brand5.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
         <section class="statistics"></section>
 
@@ -298,6 +485,9 @@
             integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
             crossorigin="anonymous"
         ></script>
+
+        <!-- FANCYBOX -->
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
         <!-- SLICK  -->
         <script

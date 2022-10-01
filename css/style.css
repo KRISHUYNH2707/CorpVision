@@ -14,6 +14,42 @@ html {
     font-family: 'Jost', sans-serif;
 }
 
+.radius-image {
+    border-radius: 8px;
+}
+
+.generic-paragraph {
+    font-size: 17px;
+    line-height: 27px;
+    color: #666;
+    opacity: .8;
+}
+
+
+.title > h3 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #7e7d7d;
+}
+.title > h2 {
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+    color: #3f3a64;
+}
+
+.title-bold-small a {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #3f3a64;
+    position: relative;
+    text-decoration: none;
+}
+
 /* HEADER */
 
 .header__wrap {
@@ -197,6 +233,13 @@ header {
     font-weight: 800;
     background-color: var(--primary-color);
     border: 1px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.cta-btn a:hover{
+    background-color: #008030;
+    border-color: #00732c;
+    color: #fff;
 }
 
 .carousel__overlay {
@@ -229,3 +272,186 @@ header {
 .slick-arrow.slick-prev {
     right: 95px;
 }
+
+/* ABOUT US SECTION */
+
+
+.checklist__link {
+    text-decoration: none;
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+
+.checklist__link span {
+    color: var(--primary-color);
+}
+
+.checklist__link a {
+    text-decoration: none;
+}
+/* VISION  */
+
+.vision {
+    background-color: #f7f7f7;
+    margin-top: 50px;
+}
+
+.vision__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+.vision__item {
+    padding:40px 30px;
+    border-radius: 8px;
+    text-align:center;
+    box-shadow: rgb(1,1,1,.05) 1px 1px 5px 0px;
+    background-color: white;
+}
+
+.vision__item:hover{
+    transform: translateY(-0.25rem);
+    box-shadow: rgb(46 41 51 / 8%) 0px 2px 4px, rgb(71 63 79 / 16%) 0px 5px 10px;
+    -webkit-transition: .3s ease;
+}
+
+.vision__item a {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-top: 25px;
+    display: block;
+    color:#3f3a64;
+    text-decoration: none;
+}
+
+.vision__item a:hover{ 
+    color:#009f4d;
+    transition: all .5s;
+}
+
+/* SERVICES */
+
+
+.services__details a:first-of-type{
+    padding: 12px 35px;
+    font-size: 19px;
+    line-height: 28px;
+    font-weight: 600;
+    text-align:center;
+    background: #fff;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transform: translateY(-25px);
+    box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
+}
+
+.services__details a:nth-of-type(2) {
+    font-size: 16px;
+    padding: 16px;
+    line-height: 28px;
+    font-weight: 800;
+    border-radius: 8px;
+}
+
+.services__details a:hover {
+    color:#009f4d;
+    transition: all .5s;
+}
+
+.services__details a:nth-of-type(2):hover {
+    color:#009f4d;
+    transition: all .5s;
+}
+
+/* GALLERY */
+.myGallery {
+    background-color: #f8f9fa;
+}
+
+
+.myGallery a.zoom {
+    overflow: hidden;
+    position: relative;
+}
+
+.myGallery a.zoom img {
+    transition: 0.3s ease-in-out;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; 
+}
+
+.myGallery a:hover img {
+    overflow: hidden;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out; }
+
+.gallery__content {
+    color: white;
+}
+
+
+.gallery__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(29, 42, 55, 0.7);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    transition: all .5s;
+}
+
+
+.gallary__content {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    padding: 46px 50px;
+    color: white;
+    visibility: hidden;
+    z-index: 2;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.project__title{
+    font-size: 24px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.project__description {
+    font-size: 18px;
+    color: #eee;
+    display: block;
+}
+
+.myGallery a:hover .gallery__overlay  {
+    opacity: 1;
+    visibility: visible;
+}
+
+.myGallery a:hover .gallary__content {
+    opacity: 1;
+    visibility: visible;
+    bottom: 0;
+}
+
+.brands__logo img {
+    transform: scale(0.7);
+}
+
+.brands__logo {
+    border-top: 1px solid #eee;
+}
+
