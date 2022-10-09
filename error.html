@@ -35,9 +35,13 @@ Author URL: http://w3layouts.com
         />
 
         <!-- GOOGLE FONT -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+
         <!-- OWL -->
         <link
             rel="stylesheet"
@@ -121,7 +125,7 @@ Author URL: http://w3layouts.com
                                     <a class="dropdown-item" href="#"
                                         >Blog Posts</a
                                     >
-                                    <a class="dropdown-item" href="./error.html"
+                                    <a class="dropdown-item" href="#"
                                         >404 Page</a
                                     >
                                     <a class="dropdown-item" href="#"
@@ -171,131 +175,42 @@ Author URL: http://w3layouts.com
                     <div class="container py-lg-5 py-0">
                         <div class="carousel__content text-center">
                             <h2>
-                                Contact Us
+                                Error Page
                             </h2>
                             <p>
-                                We are an agency located in New York
+                                Page cannot be found
                             </p>
                         </div>
                     </div>
                     <div class="carousel__overlay"></div>
         </section>
 
+        <div class="missing__page py-5">
+            <div class="container py-5">
+                <div class="error__main align-items-center">
+                    <div class="row">
+                        <div class="col-md-6 col-12 missing__left">
+                            <div class="alien__img">
+                                <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/error.svg" class="img-fluid" alt="404-img">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 missing__right">
+                            <h3>404</h3>
+                            <h5>Something's Missing</h5>
+                            <p>The page you are looking for was moved, removed, renamed, or never existed</p>
+                            <form class="form__inline search__form">
+                                <input class='form__control' type="search" placeholder="Search" aria-label="email" required="">
+                                <button class="btn search" type="submit"><span class="fa fa-search"></span></button>
+                            </form>
+                            <a href="./index.html" class="btn back__button mt-5" aria-hidden="true">
+                                <i class="fa fa-arrow-left mr-2"></i>Go back to Home
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- contact infor -->
-
-        <section class="contact__wrapper py-5" id="contact">
-            <div class="container pt-lg-5 pt-md-3">
-                <div class="title text-center">
-                    <h2 class="mx-lg-5">
-                        We are a full-service creative agency
-                    </h2>
-                    <p class="mt-2">
-                        Aurabitur id gravida risus. Fusce eget ex fermentum,
-                        ultricies nisi ac sed, lacinia est. Quisque ut lectus
-                        consequat, eros et.
-                    </p>
-                </div>
-                <div class="contact-info__wrapper pt-lg-5 pt-0">
-                    <div class="row contact-infor justify-content-center">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="infor__item">
-                                <div class="icon-box">
-                                    <span class="fa-solid fa-map"></span>
-                                </div>
-                                <div class="text-box">
-                                    <h3 class="mb-2">Our Location</h3>
-                                    <p>
-                                        Corp Vision, 343 marketing, #21 cravel
-                                        1st street, NY - 62617.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
-                            <div class="infor__item">
-                                <div class="icon-box">
-                                    <span class="fa fa-mobile"></span>
-                                </div>
-                                <div class="text-box">
-                                    <h3 class="mb-2">Give us a call</h3>
-                                    <p>
-                                        <a href="tel:+12 404-11-22-89"
-                                            >+12 404-11-22-89</a
-                                        >
-                                    </p>
-                                    <p>
-                                        <a href="tel:+12 404-11-22-99"
-                                            >+12 404-11-22-99</a
-                                        >
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
-                            <div class="infor__item">
-                                <div class="icon-box">
-                                    <span class="fa-solid fa-envelope"></span>
-                                </div>
-                                <div class="text-box">
-                                    <h3 class="mb-2">Help Desk</h3>
-                                    <p>
-                                        <a href="mailto:company@gmail.com"
-                                            >company@gmail.com</a
-                                        >
-                                    </p>
-                                    <p>
-                                        <a href="mailto:support@gmail.com"
-                                            >support@gmail.com</a
-                                        >
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- contact map -->
-        <section class="contact__wrapper" id="contact">
-            <div class="container">
-                <div class="map pt-lg-3">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3059445135!2d-74.25986613799748!3d40.69714941774136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m3!3e3!4m0!4m0!5e0!3m2!1sen!2sin!4v1570181661801!5m2!1sen!2sin"
-                        allowfullscreen=""
-                    ></iframe>
-                </div>
-            </div>
-        </section>
-
-        <!-- form section -->
-
-        <section class="submit__form py-5">
-            <div class="container">
-                <div class="title text-center">
-                    <h2>Let's talk about your project</h2>
-                    <p>We have made it easy for clients to each us and get their solutions waved</p>
-                </div>
-                <form action="" method="post">
-                    <div class="form__details">
-                        <div class="form__left ">
-                            <input type="text" name="w3lName" id="w3lName" placeholder="Name" required="">
-                            <input type="number" name="w3lPhone" placeholder="Your phone number" required="">
-                            <input type="email" name="w3lSender" id="w3lSender" placeholder="Email*" required="">
-                            <input type="text" name="w3lSubject" id="w3lName" placeholder="Subject" required="">
-                        </div>
-                        <div class="form__right">
-                            <textarea name="w3lMessage" id="w3lMessage" placeholder="Message*" required=""></textarea>
-                        </div>
-                    </div>
-                    <div class="text-lg-right text-center cta-btn">
-                        <button type="submit" class="cta-btn">Submit Now</button>
-                    </div>
-                </form>
-
-            </div>
-
-        </section>
 
         <footer class="footer__main">
             <div class="footer-29 py-5">
