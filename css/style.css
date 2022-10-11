@@ -393,6 +393,7 @@ header {
     margin-bottom: 18px;
     max-width: 800px;
     line-height: 1.1;
+
 }
 
 .carousel__content .cta-btn {
@@ -1405,3 +1406,47 @@ text-decoration: none;}
 }
 
 /* RESPONSIVE */
+
+/* animation starts here  */
+
+@-webkit-keyframes flipInX {
+    0% {
+      transform: perspective(400px) rotateX(90deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      opacity: 0; }
+    40% {
+      transform: perspective(400px) rotateX(-20deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in; }
+    60% {
+      transform: perspective(400px) rotateX(10deg);
+      opacity: 1; }
+    80% {
+      transform: perspective(400px) rotateX(-5deg); }
+    to {
+      transform: perspective(400px); } }
+  
+  @keyframes flipInX {
+    0% {
+      transform: perspective(400px) rotateX(90deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      opacity: 0; }
+    40% {
+      transform: perspective(400px) rotateX(-20deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in; }
+    60% {
+      transform: perspective(400px) rotateX(10deg);
+      opacity: 1; }
+    80% {
+      transform: perspective(400px) rotateX(-5deg); }
+    to {
+      transform: perspective(400px); } }
+  
+  .flipInX {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInX;
+    animation-name: flipInX; }

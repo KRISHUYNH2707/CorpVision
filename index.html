@@ -141,15 +141,15 @@
                 <div class="carousel__slide bg1">
                     <div class="container">
                         <div class="carousel__content">
-                            <h2 class="animate__animated animate__flipInX" style="animation-delay: 0.4s">
+                            <h2 data-animation="flipInX" data-delay="0.8s">
                                 We will do your issues our vision to your future
                             </h2>
-                            <p class="animate__animated animate__fadeInDown">
+                            <p data-animation="fadeInDown">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Sunt explicabo nisi
                                 consequatur maxime maiores autem.
                             </p>
-                            <div class="cta-btn animate__animated animate__fadeInUp" style="animation-delay: 0.8s">
+                            <div class="cta-btn" data-animation="fadeInUp" data-delay="1s">
                                 <a href="" class="btn btn-style btn-primary"
                                     >Get Started</a
                                 >
@@ -161,15 +161,15 @@
                 <div class="carousel__slide bg2">
                     <div class="container">
                         <div class="carousel__content">
-                            <h2 class="animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+                            <h2 data-animation="fadeInDown" data-delay="0.8s" data-color="#fff">
                                 Embracing success do our best, need your advice
                             </h2>
-                            <p class="animate__animated animate__fadeInDown">
+                            <p data-animation="fadeInDown">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Sunt explicabo nisi
                                 consequatur maxime maiores autem.
                             </p>
-                            <div class="cta-btn animate__animated animate__fadeInDown">
+                            <div class="cta-btn" data-animation="fadeInDown" data-delay="1s">
                                 <a href="" class="btn btn-style btn-primary"
                                     >Learn More</a
                                 >
@@ -182,13 +182,13 @@
                 <div class="carousel__slide bg3">
                     <div class="container">
                         <div class="carousel__content">
-                            <h2 class="animate__animated animate__fadeInUp">Digital transformation driven by technology</h2>
-                            <p>
+                            <h2 data-animation="fadeInUp" data-color="#fff" data-delay="0.8s">Digital transformation driven by technology</h2>
+                            <p data-animation="fadeInUp">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Sunt explicabo nisi
                                 consequatur maxime maiores autem.
                             </p>
-                            <div class="cta-btn">
+                            <div class="cta-btn" data-animation="fadeInDown" data-delay="1s">
                                 <a href="" class="btn btn-style btn-primary"
                                     >Learn More</a
                                 >
@@ -201,13 +201,13 @@
                 <div class="carousel__slide bg4">
                     <div class="container">
                         <div class="carousel__content">
-                            <h2>For those who believe in leaving a mark</h2>
-                            <p>
+                            <h2 data-animation="flipInX" data-color="#fff" data-delay="0.8s">For those who believe in leaving a mark</h2>
+                            <p data-animation="fadeInDown">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Sunt explicabo nisi
                                 consequatur maxime maiores autem.
                             </p>
-                            <div class="cta-btn">
+                            <div class="cta-btn" class="cta-btn" data-animation="fadeInUp" data-delay="1s">
                                 <a href="" class="btn btn-style btn-primary"
                                     >Learn More</a
                                 >
@@ -806,16 +806,18 @@
             type="text/javascript"
             src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
         ></script>
-        <script>
+        <!-- <script>
             $(".carousel__sliders").slick({
                 dots: FontFaceSetLoadEvent,
                 infinite: true,
                 autoplay: true,
-                autoplayspeed: 2000,
+                autoplayspeed: 3000,
                 fade: true,
                 cssEase: "linear",
             });
-        </script>
+        </script> -->
+        <script src="./js/carousel.js"></script>
+        <script src="./js/slick.js"></script>
 
         <!-- BACK TO TOP  -->
         <script src="./js/main.js"></script>
