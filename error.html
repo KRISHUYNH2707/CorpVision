@@ -70,7 +70,7 @@ Author URL: http://w3layouts.com
         <!-- Template CSS -->
         <link rel="stylesheet" href="./css/contact.css" />
     </head>
-    <body>
+    <body id="myBody">
         <!--header-->
         <header id="site-header" class="header__wrap fixed__top">
             <div class="container">
@@ -144,27 +144,24 @@ Author URL: http://w3layouts.com
                         </ul>
                     </div>
 
-                    <!-- SEARCH ICON -->
-                    <!--/search-right-->
+                    <div class="header-search">
+                        <div class='control mr-3'>
+                          <div class='btn-material'>
+                            <i class='fa fa-search icon-material-search'></i>
+                          </div>
+                        </div>
+                        <!-- full screen form controls -->
+                        <i class='icon-close fa fa-close material-icons'></i>
+                        <form action="error.html" method="GET" class='search-input'>
+                          <input class='input-search' placeholder='Start Typing' type='text'>
+                        </form>
+                      </div>
 
-                    <!--//search-right-->
+                      <button class="themeBtn" id="switchButton"  title="Click to switch theme">
+                        <i class="far fa-moon"></i>
+                        <i class="far fa-sun"></i>
 
-                    <!-- toggle switch for light and dark theme -->
-                    <!-- <div class="mobile-position">
-                        <nav class="navigation">
-                            <div class="theme-switch-wrapper">
-                                <label class="theme-switch" for="checkbox">
-                                    <input type="checkbox" id="checkbox" />
-                                    <div class="mode-container py-1">
-                                        <i class="gg-sun"></i>
-                                        <i class="gg-moon"></i>
-                                    </div>
-                                </label>
-                            </div>
-                        </nav>
-                    </div> -->
-
-                    <!-- DARK THEME -->
+                    </button>
                 </nav>
             </div>
         </header>
@@ -341,6 +338,10 @@ Author URL: http://w3layouts.com
         <script src="./js/main.js"></script>
         <script src="./js/util.js"></script>
 
+        <!-- THEME CHANGE  -->
+        <script src="./js/carousel.js"></script>
+        <script src="./js/slick.js"></script>
+
 
         <script>
             $(window).on("scroll", function () {
@@ -357,5 +358,16 @@ Author URL: http://w3layouts.com
             $("#site-header").toggleClass("dropdown-active");
             });
           </script>
+
+        <script>
+            $('.control').click(function () {
+            $('body').addClass('search-active');
+            $('.input-search').focus();
+            });
+
+            $('.icon-close').click(function () {
+            $('body').removeClass('search-active');
+            });
+        </script>
     </body>
 </html>

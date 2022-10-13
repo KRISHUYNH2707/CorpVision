@@ -49,7 +49,7 @@
         <link rel="stylesheet" href="./css/style.css" />
     </head>
 
-    <body>
+    <body id="myBody">
         <header id="site-header" class="header__wrap fixed__top">
             <div class="container">
                 <nav class="navbar navbar-expand-lg">
@@ -68,6 +68,7 @@
                         aria-controls="#corpVisionNavBar"
                         aria-expanded="false"
                         aria-label="Toggle navigation"
+                        id="navbar-toggler"
                     >
                         <span
                             class="navbar-toggler-icon fa icon-expand fa-bars"
@@ -130,7 +131,38 @@
                         </div>
                     </div> -->
 
+                    <div class="header-search">
+                        <div class='control mr-3'>
+                          <div class='btn-material'>
+                            <i class='fa fa-search icon-material-search'></i>
+                          </div>
+                        </div>
+                        <!-- full screen form controls -->
+                        <i class='icon-close fa fa-close material-icons'></i>
+                        <form action="error.html" method="GET" class='search-input'>
+                          <input class='input-search' placeholder='Start Typing' type='text'>
+                        </form>
+                    </div>
+
+                    <button class="themeBtn" id="switchButton"  title="Click to switch theme">
+                        <i class="far fa-moon"></i>
+                        <i class="far fa-sun"></i>
+                    </button>
+
                     <!-- DARK THEME -->
+                    <!-- <div class="mobile-position">
+                        <nav class="navigation">
+                          <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                              <input type="checkbox" id="checkbox">
+                              <div class="mode-container py-1">
+                                <i class="gg-sun"></i>
+                                <i class="gg-moon"></i>
+                              </div>
+                            </label>
+                          </div>
+                        </nav>
+                      </div> -->
                 </nav>
             </div>
         </header>
@@ -266,7 +298,7 @@
             </div>
         </section>
 
-        <section class="vision py-5">
+        <section class="vision py-5" data-theme="light">
             <div class="container py-lg-5 py-md-0">
                 <div class="row">
                     <div class="col-lg-6 vision__left pr-5 mt-4 col-md-12">
@@ -466,7 +498,7 @@
             <div class="container py-5">
                 <div class="row">
                     <div class="col-lg-6">
-                        <img src="./img/about.jpg" alt="" class="img-fluid">
+                        <img src="./img/about.jpg" alt="" class="img-fluid statistics__img">
                     </div>
                     <div class="col-lg-6">
                         <div class="title">
@@ -837,7 +869,22 @@
 
             $(".navbar-toggler").on("click", function () {
             $("#site-header").toggleClass("dropdown-active");
+            $(".header-search").toggleClass("cd-top--is-visible");
+            $("themeBtn").addClass("cd-top--is-visible");
             });
           </script>
+
+            <!-- Search -->
+        <script>
+            $('.control').click(function () {
+            $('body').addClass('search-active');
+            $('.input-search').focus();
+            });
+        
+            $('.icon-close').click(function () {
+            $('body').removeClass('search-active');
+            });
+        </script>
+
     </body>
 </html>
