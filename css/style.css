@@ -8,7 +8,6 @@
     --primary-color: #009f4d;
     --bg-color: #fff;
     --font-color: #3f3a64;
-
 }
 
 body,
@@ -57,7 +56,8 @@ a.zoom img {
     border-bottom-left-radius: 0;
 }
 
-.btn.focus, .btn:focus {
+.btn.focus,
+.btn:focus {
     box-shadow: none;
 }
 
@@ -66,7 +66,6 @@ a.zoom img {
 /* dark theme customization */
 
 .dark {
-
     --font-color: white;
     background-color: #151421;
 }
@@ -83,7 +82,6 @@ a.zoom img {
     background-color: #151421;
 }
 
-
 /* header dark */
 
 .dark header.nav-fixed {
@@ -97,22 +95,20 @@ a.zoom img {
 
 /* end header dark */
 
-
 /* start gallary dark */
 .dark .brands__logo {
     border-top: 1px solid rgba(238, 238, 238, 0.142);
 }
 
-
 .dark .news .card {
     background: none;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 25px 98px 0 rgb(0,0,0,.04);
+    box-shadow: 0 25px 98px 0 rgb(0, 0, 0, 0.04);
 }
 
 .dark .card-footer {
     background: none;
-    border-top: 1px solid  rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .dark .card__logo img {
@@ -127,67 +123,64 @@ a.zoom img {
     font-weight: 600;
 }
 
-
 /* Light theme */
 
-  #switchButton {
+#switchButton {
     background: none;
     outline: none;
-    border: none
-  }
-  #switchButton .fa-sun {
+    border: none;
+}
+#switchButton .fa-sun {
     font-size: 25px;
     display: none;
     color: white;
-  }
-  #switchButton .fa-moon {
+}
+#switchButton .fa-moon {
     display: block;
     font-size: 25px;
     color: white;
-  }
-  
-  /* Dark Theme*/
-  .dark #switchButton {
+}
+
+/* Dark Theme*/
+.dark #switchButton {
     background-color: none;
     outline: none;
     border: none;
-  }
-  .dark #switchButton .fa-sun {
+}
+.dark #switchButton .fa-sun {
     display: block;
     color: white;
-  }
-  
-  .dark #switchButton .fa-moon {
-    display: none;
-  }
-  
-  .dark .testimonial,
-  .dark .vision,
-  .dark .myGallery {
-    background-color: #100F19;
-  }
+}
 
+.dark #switchButton .fa-moon {
+    display: none;
+}
+
+.dark .testimonial,
+.dark .vision,
+.dark .myGallery {
+    background-color: #100f19;
+}
 
 @media screen and (max-width: 1280px) {
     #switchButton {
         position: absolute;
-        right:20px;
-        top:45px;
-        visibility: none;
+        right: 20px;
+        top: 45px;
     }
     .header-search {
-      position: absolute;
-      right: 50px;
-      top: 38px;
-  }
+        position: absolute;
+        right: 50px;
+        top: 38px;
+    }
 }
 
 @media only screen and (max-width: 991px) {
     .header-search {
-      position: absolute;
-      right: 120px;
-      top: 39px;
-  }
+        position: absolute;
+        right: 110px;
+        top: 39px;
+    }
     .control .btn-material {
         line-height: 40px;
         text-align: center;
@@ -203,14 +196,14 @@ a.zoom img {
     .header-search .icon-close {
         right: -50px;
     }
-  
+
     #switchButton {
-      right: 80px;
-      top: 45px;
+        right: 80px;
+        top: 45px;
     }
-  }
-  
-  @media only screen and (max-width: 736px) {
+}
+
+@media only screen and (max-width: 736px) {
     .header-search .icon-close {
         right: -110px;
         z-index: 9;
@@ -219,9 +212,9 @@ a.zoom img {
         position: absolute;
         right: -80px;
     }
-  }
-  
-  @media only screen and (max-width: 568px) {
+}
+
+@media only screen and (max-width: 568px) {
     .search-input input {
         font-size: 46px;
     }
@@ -230,36 +223,36 @@ a.zoom img {
         z-index: 9;
         font-size: 45px;
     }
-  }
-  
-  @media only screen and (max-width: 480px) {
+}
+
+@media only screen and (max-width: 480px) {
     .header-search {
         top: 30px;
     }
     .search-input input {
         font-size: 40px;
     }
-  
+
     #switchButton {
-      right: 60px;
-      top: 38px;
+        right: 60px;
+        top: 38px;
     }
-  }
-  
-  @media only screen and (max-width: 415px) {
+}
+
+@media only screen and (max-width: 415px) {
     .search-input input {
         right: -125px;
     }
-  }
-  
-  @media only screen and (max-width: 375px) {
+}
+
+@media only screen and (max-width: 375px) {
     .search-input input {
         font-size: 35px;
     }
     .header-search .icon-close {
         font-size: 35px;
     }
-  }
+}
 
 /* ////////////////////////// */
 
@@ -377,11 +370,6 @@ body.search-active .control .icon-material-search {
 }
 
 @media only screen and (max-width: 991px) {
-    .header-search {
-        position: absolute;
-        right: 120px;
-        top: 39px;
-    }
     .control .btn-material {
         line-height: 40px;
         text-align: center;
@@ -430,7 +418,7 @@ body.search-active .control .icon-material-search {
 @media only screen and (max-width: 480px) {
     .header-search {
         top: 30px;
-        right:80px;
+        right: 80px;
     }
     .search-input input {
         font-size: 40px;
@@ -534,7 +522,7 @@ body.search-active .control .icon-material-search {
 
 .nav-fixed #switchButton .fa-moon {
     color: black;
-  }
+}
 
 .gg-moon:after {
     content: "";
@@ -595,7 +583,7 @@ input:checked + .mode-container i.gg-moon {
 
 .dropdown-active {
     background: rgba(0, 0, 0, 0.7);
-    text-align: center;
+    /* text-align: center; */
 }
 
 header.nav-fixed {
@@ -659,6 +647,10 @@ header {
     color: white;
 }
 
+.navbar-collapse {
+    text-align: center;
+}
+
 .navbar .navbar-collapse .navbar-nav .nav-item {
     text-transform: uppercase;
     font-weight: 800;
@@ -687,12 +679,29 @@ header {
     color: white;
 }
 
-.fa-bars {
+.fa-bars,
+.fa-times {
     color: white;
     background-color: var(--primary-color);
     padding: 5px;
     vertical-align: center;
     border-radius: 5px;
+}
+
+button.navbar-toggler .icon-close {
+    display: block;
+}
+
+button.navbar-toggler .icon-expand {
+    display: none;
+}
+
+button.navbar-toggler.collapsed .icon-close {
+    display: none;
+}
+
+button.navbar-toggler.collapsed .icon-expand {
+    display: block;
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
@@ -753,19 +762,20 @@ header {
         font-weight: 600;
         padding: 10px;
     }
-
-
 }
 
 @media (max-width: 991px) {
-
     .navbar .navbar-collapse .navbar-nav .nav-item a {
-      font-weight: 600;
-      padding: 10px;
-  }
+        font-weight: 600;
+        padding: 10px;
+    }
 
     .dropdown-toggle::after {
-        right:0px;
+        right: 0px;
+    }
+
+    .navbar-expand-lg .navbar-nav .dropdown .dropdown-menu {
+        transform: translateX(0);
     }
 }
 
@@ -1417,14 +1427,13 @@ header {
     grid-template-columns: 1fr auto;
     width: 85%;
 }
-.statistics img.statistics__img{
+.statistics img.statistics__img {
     border-radius: 10px;
 }
 
-
 @media (max-width: 1200px) {
     .statistics img.statistics__img {
-        margin-top:50px;
+        margin-top: 50px;
     }
 }
 
@@ -1441,10 +1450,9 @@ header {
         margin-bottom: 25px;
     }
     .statistics img.statistics__img {
-        margin-top:60px;
+        margin-top: 60px;
     }
 }
-
 
 @media (max-width: 480px) {
     .statistics .title h3 {
@@ -1952,6 +1960,10 @@ form.subscribe {
     opacity: 0;
 }
 
+a.backToTop:hover{
+    color: white;
+}
+
 .cd-top--is-visible {
     visibility: visible;
     opacity: 1;
@@ -1959,15 +1971,6 @@ form.subscribe {
 
 .cd-top--fade-out {
     opacity: 0.9;
-}
-
-@media (max-width: 1280px) {
-}
-
-@media (max-width: 480px) {
-    /* .backToTop {
-        visibility: hidden;
-    } */
 }
 
 /* RESPONSIVE */
@@ -2028,12 +2031,3 @@ form.subscribe {
     -webkit-animation-name: flipInX;
     animation-name: flipInX;
 }
-
-
-
-
-
-
-
-
-

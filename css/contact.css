@@ -343,12 +343,16 @@ body.search-active .control .icon-material-search {
   padding: 10px;
 }
 
+.navbar-expand-lg .navbar-nav .dropdown .dropdown-menu {
+  transform: translateX(0)
+}
+
 }
 
 @media only screen and (max-width: 991px) {
   .header-search {
     position: absolute;
-    right: 120px;
+    right: 110px;
     top: 39px;
 }
   .control .btn-material {
@@ -406,13 +410,14 @@ body.search-active .control .icon-material-search {
 @media only screen and (max-width: 480px) {
   .header-search {
       top: 30px;
+      right: 80px;
   }
   .search-input input {
       font-size: 40px;
   }
 
   #switchButton {
-    right: 80px;
+    right: 60px;
     top: 38px;
   }
 }
@@ -450,6 +455,10 @@ header.nav-fixed {
 .nav-fixed .navbar .navbar-brand span:first-child,
 .nav-fixed .navbar .darkLight i {
   color: #3f3a64;
+}
+
+.navbar-collapse {
+  text-align: center;
 }
 
 .nav-fixed .navbar .navbar-collapse .navbar-nav .nav-item a {
@@ -577,13 +586,28 @@ header {
   color: white;
 }
 
-.fa-bars {
+.fa-bars, .fa-times {
   color: white;
   background-color: var(--primary-color);
   padding: 5px;
   vertical-align: center;
   border-radius: 5px;
 }
+
+button.navbar-toggler .icon-close {
+  display: block; }
+
+button.navbar-toggler .icon-expand {
+  display: none; }
+
+button.navbar-toggler.collapsed .icon-close {
+  display: none; }
+
+button.navbar-toggler.collapsed .icon-expand {
+  display: block; }
+
+
+  
 
 @media (max-width: 1280px) {
   .myCarousel .carousel__content h2 {
@@ -629,7 +653,6 @@ header {
 
 .dropdown-active {
   background: rgba(0, 0, 0, 0.7);
-  text-align: center;
 }
 
 .error__main {
@@ -1119,6 +1142,10 @@ text-decoration: none;}
   transition: all .2s;
   visibility: hidden;
   opacity: 0;
+}
+
+a.backToTop:hover{
+  color: white;
 }
 
 .cd-top--is-visible {
