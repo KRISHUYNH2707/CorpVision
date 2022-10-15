@@ -265,6 +265,9 @@ a.zoom img {
 
 /* HEADER SEARCH */
 
+body {
+    /* Search Active */
+}
 body.search-active {
     overflow: hidden;
 }
@@ -320,6 +323,7 @@ body.search-active .control .icon-material-search {
     font-size: 54px;
     border: 0;
     background: transparent;
+    -webkit-appearance: none;
     box-sizing: border-box;
     outline: 0;
     font-weight: 200;
@@ -1081,6 +1085,7 @@ button.navbar-toggler.collapsed .icon-expand {
 .vision__item:hover {
     transform: translateY(-0.25rem);
     box-shadow: rgb(46 41 51 / 8%) 0px 2px 4px, rgb(71 63 79 / 16%) 0px 5px 10px;
+    -webkit-transition: 0.3s ease;
 }
 
 .vision__item a {
@@ -1666,6 +1671,9 @@ a.blog-desc:hover {
 }
 
 @media (max-width: 480px) {
+    .testimonial .title h3 {
+    }
+
     .news .title h2 {
         font-size: 24px;
         line-height: 30px;
