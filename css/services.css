@@ -1046,7 +1046,7 @@ html body section:nth-child(even):not(.slider) {
 }
 
 .information {
-  background-image: url("..img/bg1.jpg");
+  background-image: url("../img/bg1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

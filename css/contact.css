@@ -209,9 +209,6 @@ a.zoom img {
 /* Dark theme end */
 
 
-body {
-  /* Search Active */
-}
 body.search-active {
   overflow: hidden;
 }
@@ -267,7 +264,6 @@ body.search-active .control .icon-material-search {
   font-size: 54px;
   border: 0;
   background: transparent;
-  -webkit-appearance: none;
   box-sizing: border-box;
   outline: 0;
   font-weight: 200;
@@ -773,7 +769,7 @@ a.back__button:hover {
 }
 
 .bg1 {
-  background: url(..img/b1.jpg) no-repeat top;
+  background: url(../img/b1.jpg) no-repeat top;
   background-size: cover;
 
 }
