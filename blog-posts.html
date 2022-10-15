@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6Design+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/blog-posts.css" />
+    <title>Corpvision</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark stroke">
+          <div class="container-fluid">
+            <h1 class="header-logo">
+              <a class="navbar-brand" href="./index.html">
+                <i class="fa-solid fa-align-right"></i>
+                Corp Vision
+                <span class="header-logo__text">Vision to your Future</span>
+              </a>
+            </h1>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="nav fa-solid fa-bars"></i>
+              <i class="close fa-solid fa-xmark"></i>
+            </button>
+            <div
+              class="collapse navbar-collapse align-items-center"
+              id="navbarSupportedContent"
+            >
+              <div class="header-nav mx-auto">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./aboutus.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./services.html">Service</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link active dropdown-toggle"
+                      aria-current="page"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Pages
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item active" href="./blog-posts.html"
+                          >Blog Posts</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="./page_404.html"
+                          >404 Page</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="./landing-page.html"
+                          >Landing Page</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="./element-page.html"
+                          >Elements Page</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header-search">
+                <span class="btn btn--open">
+                  <i class="open fa-solid fa-magnifying-glass"></i>
+                </span>
+                <form class="d-flex">
+                  <input
+                    class="form-control"
+                    type="search"
+                    placeholder="Start Typing"
+                    aria-label="Search"
+                    autofocus
+                  />
+                  <span class="btn btn--close">
+                    <i class="close fa-solid fa-xmark"></i>
+                  </span>
+                </form>
+              </div>
+              <!-- Select Theme -->
+              <!-- Light (Default) -->
+              <div class="header-theme">
+                <label for="themeCheckbox">
+                  <input
+                    type="checkbox"
+                    name="themeCheckbox"
+                    id="themeCheckbox"
+                  />
+                  <div class="header-theme__icon">
+                    <i class="sun fa-solid fa-sun"></i>
+                    <i class="moon fa-solid fa-moon"></i>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Slider -->
+    <section id="slider" class="slider" data-bs-touch="true">
+      <div
+        id="myCarousel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./img/b1.jpg"
+              class="d-block w-100"
+              alt="Carousel Thumb"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="animate__animated animate__flipInX">About us</h1>
+              <p class="animate__animated animate__fadeInDown">
+                Experience you can trust, service you can count on.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- blog -->
+    <section class="blog">
+      <div class="container">
+        <!-- Paginate -->
+        <div class="paginate">
+          <div class="items row gy-3 g-sm-5">
+            <!-- Card Item -->
+            <div class="col col-12 col-md-6 col-lg-4">
+              <div class="card-item card-item--zoom-effect">
+                <div class="card-item-header">
+                  <a href="#"
+                    ><img
+                      src="./img/blog1.jpg"
+                      alt="New Image"
+                  /></a>
+                </div>
+                <div class="card-item-body">
+                  <p><a href="#">Startup Business</a></p>
+                  <h3><a href="#"> Hello world! </a></h3>
+                </div>
+                <div class="card-item-footer">
+                  <div class="blog-item-author">
+                    <a href="#" class="blog-item-author__post-author"
+                      ><img
+                        src="./img/328cc1f23e4a3b73aa60ee6ced1897a1.jpeg"
+                        alt="Author Image"
+                    /></a>
+                    <ul class="blog-item-author__blog-meta">
+                      <li>
+                        <span>by</span>
+                        <a href="#">W3Layouts</a>
+                      </li>
+                    </ul>
+                    <div class="new-main-item-author__date">
+                      <p>April 1, 2021</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card Item -->
+            <div class="col col-12 col-md-6 col-lg-4">
+              <div class="card-item card-item--zoom-effect">
+                <div class="card-item-header">
+                  <a href="#"
+                    ><img
+                      src="./img/blog2.jpg"
+                      alt="New Image"
+                  /></a>
+                </div>
+                <div class="card-item-body">
+                  <p><a href="#">Startup Business</a></p>
+                  <h3><a href="#"> Hello world! </a></h3>
+                </div>
+                <div class="card-item-footer">
+                  <div class="blog-item-author">
+                    <a href="#" class="blog-item-author__post-author"
+                      ><img
+                        src="./img/328cc1f23e4a3b73aa60ee6ced1897a1.jpeg"
+                        alt="Author Image"
+                    /></a>
+                    <ul class="blog-item-author__blog-meta">
+                      <li>
+                        <span>by</span>
+                        <a href="#">W3Layouts</a>
+                      </li>
+                    </ul>
+                    <div class="new-main-item-author__date">
+                      <p>April 1, 2021</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card Item -->
+            <div class="col col-12 col-md-6 col-lg-4">
+              <div class="card-item card-item--zoom-effect">
+                <div class="card-item-header">
+                  <a href="#"
+                    ><img
+                      src="./img/blog3.jpg"
+                      alt="New Image"
+                  /></a>
+                </div>
+                <div class="card-item-body">
+                  <p><a href="#">Startup Business</a></p>
+                  <h3><a href="#"> Hello world! </a></h3>
+                </div>
+                <div class="card-item-footer">
+                  <div class="blog-item-author">
+                    <a href="#" class="blog-item-author__post-author"
+                      ><img
+                        src="./img/328cc1f23e4a3b73aa60ee6ced1897a1.jpeg"
+                        alt="Author Image"
+                    /></a>
+                    <ul class="blog-item-author__blog-meta">
+                      <li>
+                        <span>by</span>
+                        <a href="#">W3Layouts</a>
+                      </li>
+                    </ul>
+                    <div class="new-main-item-author__date">
+                      <p>April 1, 2021</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card Item -->
+            <div class="col col-12 col-md-6 col-lg-4">
+              <div class="card-item card-item--zoom-effect">
+                <div class="card-item-header">
+                  <a href="#"
+                    ><img
+                      src="./img/b3.jpg"
+                      alt="New Image"
+                  /></a>
+                </div>
+                <div class="card-item-body">
+                  <p><a href="#">Startup Business</a></p>
+                  <h3><a href="#"> Hello world! </a></h3>
+                </div>
+                <div class="card-item-footer">
+                  <div class="blog-item-author">
+                    <a href="#" class="blog-item-author__post-author"
+                      ><img
+                        src="./img/328cc1f23e4a3b73aa60ee6ced1897a1.jpeg"
+                        alt="Author Image"
+                    /></a>
+                    <ul class="blog-item-author__blog-meta">
+                      <li>
+                        <span>by</span>
+                        <a href="#">W3Layouts</a>
+                      </li>
+                    </ul>
+                    <div class="new-main-item-author__date">
+                      <p>April 1, 2021</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card Item -->
+            <div class="col col-12 col-md-6 col-lg-4">
+              <div class="card-item card-item--zoom-effect">
+                <div class="card-item-header">
+                  <a href="#"
+                    ><img
+                      src="./img/b1.jpg"
+                      alt="New Image"
+                  /></a>
+                </div>
+                <div class="card-item-body">
+                  <p><a href="#">Startup Business</a></p>
+                  <h3><a href="#"> Hello world! </a></h3>
+                </div>
+                <div class="card-item-footer">
+                  <div class="blog-item-author">
+                    <a href="#" class="blog-item-author__post-author"
+                      ><img
+                        src="./img/328cc1f23e4a3b73aa60ee6ced1897a1.jpeg"
+                        alt="Author Image"
+                    /></a>
+                    <ul class="blog-item-author__blog-meta">
+                      <li>
+                        <span>by</span>
+                        <a href="#">W3Layouts</a>
+                      </li>
+                    </ul>
+                    <div class="new-main-item-author__date">
+                      <p>April 1, 2021</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card Item -->
+            <div class="col col-12 col-md-6 col-lg-4">
+              <div class="card-item card-item--zoom-effect">
+                <div class="card-item-header">
+                  <a href="#"
+                    ><img
+                      src="./img/b2.jpg"
+                      alt="New Image"
+                  /></a>
+                </div>
+                <div class="card-item-body">
+                  <p><a href="#">Startup Business</a></p>
+                  <h3><a href="#"> Hello world! </a></h3>
+                </div>
+                <div class="card-item-footer">
+                  <div class="blog-item-author">
+                    <a href="#" class="blog-item-author__post-author"
+                      ><img
+                        src="./img/328cc1f23e4a3b73aa60ee6ced1897a1.jpeg"
+                        alt="Author Image"
+                    /></a>
+                    <ul class="blog-item-author__blog-meta">
+                      <li>
+                        <span>by</span>
+                        <a href="#">W3Layouts</a>
+                      </li>
+                    </ul>
+                    <div class="new-main-item-author__date">
+                      <p>April 1, 2021</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card Item -->
+            <div class="col col-12 col-md-6 col-lg-4">
+              <div class="card-item card-item--zoom-effect">
+                <div class="card-item-header">
+                  <a href="#"
+                    ><img
+                      src="./img/blog1.jpg"
+                      alt="New Image"
+                  /></a>
+                </div>
+                <div class="card-item-body">
+                  <p><a href="#">Startup Business</a></p>
+                  <h3><a href="#"> Hello world! </a></h3>
+                </div>
+                <div class="card-item-footer">
+                  <div class="blog-item-author">
+                    <a href="#" class="blog-item-author__post-author"
+                      ><img
+                        src="./img/328cc1f23e4a3b73aa60ee6ced1897a1.jpeg"
+                        alt="Author Image"
+                    /></a>
+                    <ul class="blog-item-author__blog-meta">
+                      <li>
+                        <span>by</span>
+                        <a href="#">W3Layouts</a>
+                      </li>
+                    </ul>
+                    <div class="new-main-item-author__date">
+                      <p>April 1, 2021</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card Item -->
+            <div class="col col-12 col-md-6 col-lg-4">
+              <div class="card-item card-item--zoom-effect">
+                <div class="card-item-header">
+                  <a href="#"
+                    ><img
+                      src="./img/blog2.jpg"
+                      alt="New Image"
+                  /></a>
+                </div>
+                <div class="card-item-body">
+                  <p><a href="#">Startup Business</a></p>
+                  <h3><a href="#"> Hello world! </a></h3>
+                </div>
+                <div class="card-item-footer">
+                  <div class="blog-item-author">
+                    <a href="#" class="blog-item-author__post-author"
+                      ><img
+                        src="./img/328cc1f23e4a3b73aa60ee6ced1897a1.jpeg"
+                        alt="Author Image"
+                    /></a>
+                    <ul class="blog-item-author__blog-meta">
+                      <li>
+                        <span>by</span>
+                        <a href="#">W3Layouts</a>
+                      </li>
+                    </ul>
+                    <div class="new-main-item-author__date">
+                      <p>April 1, 2021</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pager">
+            <div class="firstPage">&laquo;</div>
+            <div class="previousPage">&lsaquo;</div>
+            <div class="pageNumbers"></div>
+            <div class="nextPage">&rsaquo;</div>
+            <div class="lastPage">&raquo;</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Footer Top -->
+      <div class="footer-top py-5">
+        <div class="container py-md-4">
+          <div class="row g-5">
+            <!-- Footer Top Item -->
+            <div class="col col-12 col-md-6 col-lg-4">
+              <div class="footer-top-item footer-top-item--logo">
+                <h1 class="footer-top-item__logo">
+                  <a href="../index.html">
+                    <i class="fa-solid fa-align-right"></i>
+                    Corp Vision
+                    <span>Vision to your Future</span>
+                  </a>
+                </h1>
+                <div class="footer-top-item__content">
+                  <p>
+                    Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                    ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor
+                    sit amet Semper at elit team advisors.
+                  </p>
+                  <ul class="footer-top-item__content-social">
+                    <li>
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Footer Top Item -->
+            <div class="col col-12 col-md-6 col-lg-4">
+              <div class="footer-top-item">
+                <h3 class="footer-top-item__heading">information info</h3>
+                <div class="footer-top-item__content">
+                  <ul>
+                    <li>
+                      Address : Corp Vision, 343 marketing, #21 cravel 1st lane
+                      street, NY - 62617.
+                    </li>
+                    <li>
+                      Phone Number :
+                      <a href="tel:+1(21) 234 4567">+1(21) 234 4567</a>
+                    </li>
+                    <li>
+                      Email :
+                      <a href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                    <li>
+                      Support :
+                      <a href="mailto:info@support.com">info@support.com</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Footer Top Item -->
+            <div class="col col-12 col-sm-6 col-lg-2">
+              <div class="footer-top-item">
+                <h3 class="footer-top-item__heading">categories</h3>
+                <div class="footer-top-item__content">
+                  <ul>
+                    <li><a href="#">Marketing Strategy</a></li>
+                    <li><a href="#">Startup Business</a></li>
+                    <li><a href="#">Design development</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Footer Top Item -->
+            <div class="col col-12 col-sm-6 col-lg-2">
+              <div class="footer-top-item">
+                <h3 class="footer-top-item__heading">meta</h3>
+                <div class="footer-top-item__content">
+                  <ul>
+                    <li><a href="#">Log in</a></li>
+                    <li><a href="#">Entries feed</a></li>
+                    <li><a href="#">Comments feed</a></li>
+                    <li><a href="#">WordPress.org</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="footer-bottom py-5">
+        <div class="container">
+          <p class="footer-bottom__copy">
+            &copy; 2022 Corp Vision All Rights Reserved | WordPress Theme by
+            <a href="#" class="footer-bottom__copy-link">W3Layouts</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Btn To Top -->
+    <a href="#slider" class="btn-to-top">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+  </body>
+
+  <!-- Jquery -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <!-- Pagination -->
+  <script src="./../JS/Any-Content-Pagination-Plugin-For-jQuery-paginga/paginga.jquery.js"></script>
+  <script>
+    $(".paginate").paginga({
+      itemsPerPage: 6,
+    });
+  </script>
+  <!-- Bootstrap -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+  <!-- JS -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    new WOW().init();
+  </script>
+  <!-- Main Script -->
+  <script src="./js/script.js"></script>
+</html>

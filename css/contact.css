@@ -773,7 +773,7 @@ a.back__button:hover {
 }
 
 .bg1 {
-  background: url(../img/b1.jpg) no-repeat top;
+  background: url(..img/b1.jpg) no-repeat top;
   background-size: cover;
 
 }
